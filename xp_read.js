@@ -65,7 +65,7 @@ function AutoRead() {
               await $.wait(30000);
             }
             else if (readres.resultCode == 1 && typeof readres.data.goldCoinNumber === 'number') {
-              console.log(`\n本次阅读获得${readres.data.goldCoinNumber}个青豆，即将开始下次阅读\n`)
+              console.log(`\n本次阅读获得${readres.data.goldCoinNumber}金币💰，即将开始下次阅读\n`)
               readscore += readres.items.score
             }
             else {
