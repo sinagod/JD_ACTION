@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-      YOUTH_READ: ${{ secrets.XP_READ }}
-      YOUTH_READ2: ${{ secrets.XP_READ2 }}
-      YOUTH_READ3: ${{ secrets.XP_READ3 }}
-      YOUTH_READ4: ${{ secrets.XP_READ4 }}
+      XP_READ: ${{ secrets.XP_READ }}
+      XP_READ2: ${{ secrets.XP_READ2 }}
+      XP_READ3: ${{ secrets.XP_READ3 }}
+      XP_READ4: ${{ secrets.XP_READ4 }}
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 12.x
