@@ -33,26 +33,26 @@ jobs:
         run: |
           node xp_read.js
         env:
-          YOUTH_READ: ${{ secrets.XP_READ }}
+          XP_READ: ${{ secrets.XP_READ }}
 
       - name: '运行 【中青看点自动阅读二】'
         if: env.XP_READ2
         run: |
           node xp_read.js
         env:
-          YOUTH_READ: ${{ secrets.XP_READ2 }}
+          XP_READ: ${{ secrets.XP_READ2 }}
           
       - name: '运行 【中青看点自动阅读三】'
         if: env.XP_READ3
         run: |
           node xp_read.js
         env:
-          YOUTH_READ: ${{ secrets.XP_READ3 }}
+          XP_READ: ${{ secrets.XP_READ3 }}
           
       - name: '运行 【中青看点自动阅读四】'
         if: env.XP_READ4
         run: |
           node xp_read.js
         env:
-          YOUTH_READ: ${{ secrets.XP_READ4 }}
+          XP_READ: ${{ secrets.XP_READ4 }}
           
