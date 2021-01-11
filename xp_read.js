@@ -40,10 +40,19 @@ let ReadArr = [], XpBody = "",readscore = 0;
 
 function AutoRead() {
     return new Promise((resolve, reject) => {
-       let url = {
-            url: `https://ios.baertt.com/v5/article/complete.json`,
+        let url = {
+            url: `https://veishop.iboxpay.com/nf_gateway/nf_customer_activity/day_cash/v1/give_gold_coin_by_video.json`,
             headers: {
-            'User-Agent': 'KDApp/1.7.8 (iPhone; iOS 14.0; Scale/3.00)'
+                "Content-Type": "application/json; charset=utf-8",
+                "Host": "veishop.iboxpay.com",
+                "User-Agent": "VeiShop, 1.4.4 (iOS, 13.7, zh_CN, Apple, iPhone, A612151F-1697-4454-AA6B-2F1A414A7CE5)",
+                "X-User-Agent": "VeiShop, 1.4.4 (iOS, 13.7, zh_CN, Apple, iPhone, A612151F-1697-4454-AA6B-2F1A414A7CE5)",
+                "mchtNo": "100529600058887",
+                "shopkeeperId": "1148855820752977920",
+                "source": "VEISHOP_APP_IOS",
+                "token": "443cf222feb442eba3bfcaadd269e32d",
+                "traceid": "313484966205418946561610350448342a4b82bfa26fc",
+                "version": "1.4.4"
             },
             body: articlebody
         };
