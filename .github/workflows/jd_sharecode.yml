@@ -19,7 +19,7 @@ jobs:
           git clone https://github.com/sinagod/JD_ACTION.git ~/JD_ACTION
       - name: 提交互助码
         run: |
-          cd ~/Actions/.github
+          cd ~/JD_ACTION/.github
           chmod +x jd_sharecodes.sh
           ./jd_sharecodes.sh
           git clone -b master https://gitee.com/the_king_god/lxk.script.git ~/scripts
