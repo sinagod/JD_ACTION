@@ -11,7 +11,7 @@ on:
   # watch:
   #       types: started
   repository_dispatch:
-    types: bean_home
+    types: jd_sharecode
 jobs:
   build:
 
@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone -b master https://gitee.com/the_king_god/sazs34.script.git ~/scripts
+          git clone -b master https://gitee.com/the_king_god/sazs34.script.git ~/backup
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -34,7 +34,7 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: '运行 【京东取关商品】'
         run: |
-          cd  ~/scripts
+          cd  ~/backup
           npm install
           node jd_shareCode_auto.js
         env:
